@@ -3,8 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import fastClick from 'fastclick'    //移动端300ms点击使事件延迟
+import 'styles/reset.css'
+import 'styles/border.css'    //1px像素边框
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
+fastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
