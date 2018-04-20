@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201309/24/977fea7b3c5cd758c8d65eac.jpg_150x150_7d086c07.jpg',
-        title: '成都欢乐谷',
-        desc: '成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201309/24/977fea7b3c5cd758c8d65eac.jpg_150x150_7d086c07.jpg',
-        title: '成都欢乐谷',
-        desc: '成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201309/24/977fea7b3c5cd758c8d65eac.jpg_150x150_7d086c07.jpg',
-        title: '成都欢乐谷',
-        desc: '成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷成都欢乐谷'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
