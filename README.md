@@ -2,7 +2,8 @@
 
 > 本项目是采用vue实现的去哪网移动端仿制页面
 
-### 项目二维码
+## 项目二维码
+![项目二维码.png](https://github.com/qwerfei/vue-travel-demo/blob/master/two-dimension-code/1524648944.png)
 
 ### 项目技术架构
 ***
@@ -28,7 +29,7 @@
 *  城市右侧字母表滑动,点击与城市列表联动功能
 *  详情显示页面头部滑动显示
 
-###目录结构
+### 目录结构
 ***
 <pre>
 ├── build                // 构建服务和webpack配置
@@ -57,6 +58,13 @@
 ├── package.json         // 项目依赖包配置文件
 ├── README.md            // 项目说明文件
 </pre>
+
+## 心得
+*  better-scroll默认会阻止浏览器的原生click 事件，因此在要设置click:true
+*  <meta>标签中设置了禁用缩放,可以不使用fastclick库
+*  touchmove这种高频率触发事件最好用定时器进行函数节流
+*  城市页面加载时会出现列表项延迟加载现象,原因未知
+*  所有json数据都是本地mock的模拟数据,axios的跨域请求是我乱处理的，可以实现，不建议使用
 
 ## Build Setup
 
