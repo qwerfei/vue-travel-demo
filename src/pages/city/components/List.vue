@@ -40,7 +40,7 @@ export default {
     letter: String
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.warpper)
+    this.scroll = new Bscroll(this.$refs.warpper, {click: true})
   },
   computed: {
     ...mapState({

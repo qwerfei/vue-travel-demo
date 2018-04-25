@@ -20,6 +20,7 @@ export default new Router({
     name: 'Detail',
     component: Detail
   }],
+  // 切换路由时页面滚动到顶部
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   }

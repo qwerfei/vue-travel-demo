@@ -29,6 +29,10 @@ export default {
     }
   },
   methods: {
+    // getCityInfo () {
+    //   axios.get('https://bird.ioliu.cn/v1/?url=' + 'http://www.wanandroid.com/tools/mockapi/5095/city')
+    //     .then(this.getCityInfoSucc)
+    // },
     getCityInfo () {
       axios.get('/api/city.json')
         .then(this.getCityInfoSucc)

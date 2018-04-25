@@ -38,6 +38,10 @@ export default {
     ...mapState(['city'])
   },
   methods: {
+    // getHomeInfo () {
+    //   axios.get('https://bird.ioliu.cn/v1/?url=' + 'http://www.wanandroid.com/tools/mockapi/5095/index?city=' + this.city)
+    //     .then(this.getHomeInfoSucc)
+    // },
     getHomeInfo () {
       axios.get('/api/index.json?city=' + this.city)
         .then(this.getHomeInfoSucc)

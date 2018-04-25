@@ -33,6 +33,13 @@ export default {
     }
   },
   methods: {
+    // getDetailInfo () {
+    //   axios.get('https://bird.ioliu.cn/v1/?url=' + 'http://www.wanandroid.com/tools/mockapi/5095/detailjson', {
+    //     params: {
+    //       id: this.$route.params.id
+    //     }
+    //   }).then(this.handleGetDataSucc)
+    // },
     getDetailInfo () {
       axios.get('/api/detail.json', {
         params: {
@@ -51,9 +58,9 @@ export default {
       }
     }
   },
-  mounted () {
-    this.getDetailInfo()
-  },
+  // mounted () {
+  //   this.getDetailInfo()
+  // },
   activated () {
     this.getDetailInfo()
   }
